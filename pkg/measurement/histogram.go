@@ -46,7 +46,7 @@ const (
 func newHistogram() *histogram {
 	h := new(histogram)
 	h.startTime = time.Now()
-	h.hist = hdrhistogram.New(1, 24*60*60*1000*1000, 3)
+	h.hist = hdrhistogram.New(1, 60*60*1000*1000, 3) // define buckets from 1microsecond to 1hour with 0.1% uniform relative accuracy
 	return h
 }
 
