@@ -1,3 +1,18 @@
+# Impossiblecloud Fork Notification
+
+> [!WARNING]
+> !!! Default branch for all IC modifications is `ic-build` !!!
+> Please propose all PRs for `ic-build` branch, not `master`!
+
+Forked to add Prometheus metrics and make other adjustments we might need
+(for example GH actions to build the image, customization that do not make
+sense for the upstream, etc).
+
+All modifications must be made in `ic-build` branch. We keep `master` branch
+in sync with the upstream source, and then rebase our branch.
+
+Image is build automatically on merges into `ic-build` branch.
+
 # go-ycsb
 
 go-ycsb is a Go port of [YCSB](https://github.com/brianfrankcooper/YCSB). It fully supports all YCSB generators and the Core workload so we can do the basic CRUD benchmarks with Go.
